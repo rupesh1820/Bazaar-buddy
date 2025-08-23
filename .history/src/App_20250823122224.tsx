@@ -15,8 +15,6 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import RoleRedirect from "./Auth/RoleRedirect";
 import Profile from "./Pages/Profile";
 import AyurvedicProducts from "./Pages/Ayurveic";
-import FashionProducts from "./Pages/Fashion ";
-import TechGadgets from "./Pages/TechGadgets";
 function App() {
   const Location = useLocation();
   const hideNavarbar =
@@ -61,8 +59,7 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/ayurvedic" element={<AyurvedicProducts />} />
-          <Route path="/fashion" element={<FashionProducts />} />
-          <Route path="/tech" element={<TechGadgets />} />
+
         <Route path="/cart" element={<CartPage />} />
         <Route path="/product/:id" element={<ProductsDetailsPage />} />
       </Routes>

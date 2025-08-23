@@ -158,133 +158,94 @@ const AyurvedicProducts = () => {
         </div>
 
         {/* Categories Grid */}
-       <div className="container mx-auto px-4">
-  <h2 className="text-2xl font-bold text-teal-800 mb-6">Shop by Category</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-    {/* Healthy Juice */}
-    <div 
-      className="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group"
-      onClick={() => setSelectedCategory("Healthy-Juice")}
-    >
-      <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/02/product-category-banners-700x385-1-600x330.jpg" 
-        alt="Healthy Juice" 
-        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
-      <div className="absolute bottom-4 left-4 text-white">
-        <h3 className="text-lg font-semibold">Healthy Juice</h3>
-        <p className="text-sm">From ₹30</p>
-        <button className="mt-2 bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-white font-medium">
-          Shop Now
-        </button>
-      </div>
-    </div>
+        <div className="container mx-auto">
+          <h2 className="text-2xl font-bold text-teal-800 mb-6">Shop by Category</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div 
+              className="bg-white rounded-2xl shadow-md p-6 cursor-pointer transition-transform duration-300 hover:scale-105"
+              onClick={() => setSelectedCategory("Ayurvedic-Medicine")}
+            >
+              <div className="h-40 bg-teal-100 rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-4xl">🌿</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Ayurvedic Medicine</h3>
+              <p className="text-gray-600 mb-4">From $20</p>
+              <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition">
+                Shop Now
+              </button>
+            </div>
 
-    {/* Ayurvedic Medicine */}
-    <div 
-      className="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group"
-      onClick={() => setSelectedCategory("Ayurvedic-Medicine")}
-    >
-      <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/04/ayurvedic-medicine-600x330.jpg" 
-        alt="Ayurvedic Medicine" 
-        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
-      <div className="absolute bottom-4 left-4 text-white">
-        <h3 className="text-lg font-semibold">Ayurvedic Medicine</h3>
-        <p className="text-sm">From ₹20</p>
-        <button className="mt-2 bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-white font-medium">
-          Shop Now
-        </button>
-      </div>
-    </div>
+            <div 
+              className="bg-white rounded-2xl shadow-md p-6 cursor-pointer transition-transform duration-300 hover:scale-105"
+              onClick={() => setSelectedCategory("Healthy-Juice")}
+            >
+              <div className="h-40 bg-green-100 rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-4xl">🥤</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Healthy Juice</h3>
+              <p className="text-gray-600 mb-4">From $30</p>
+              <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition">
+                Shop Now
+              </button>
+            </div>
 
-    {/* Homeopathic Medicines */}
-    <div 
-      className="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group"
-      onClick={() => setSelectedCategory("Homeopathic-Medicines")}
-    >
-      <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/09/Homeopathy-Medicine-1-600x330.jpg" 
-        alt="Homeopathic Medicines" 
-        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
-      <div className="absolute bottom-4 left-4 text-white">
-        <h3 className="text-lg font-semibold">Homeopathic Medicines</h3>
-        <p className="text-sm">From ₹40</p>
-        <button className="mt-2 bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-white font-medium">
-          Shop Now
-        </button>
-      </div>
-    </div>
+            <div 
+              className="bg-white rounded-2xl shadow-md p-6 cursor-pointer transition-transform duration-300 hover:scale-105"
+              onClick={() => setSelectedCategory("Churna")}
+            >
+              <div className="h-40 bg-amber-100 rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-4xl">🍚</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Churna</h3>
+              <p className="text-gray-600 mb-4">From $15</p>
+              <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition">
+                Shop Now
+              </button>
+            </div>
 
-    {/* Churna */}
-    <div 
-      className="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group"
-      onClick={() => setSelectedCategory("Churna")}
-    >
-      <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/09/Churna-600x330.png" 
-        alt="Churna" 
-        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
-      <div className="absolute bottom-4 left-4 text-white">
-        <h3 className="text-lg font-semibold">Churna</h3>
-        <p className="text-sm">From ₹15</p>
-        <button className="mt-2 bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-white font-medium">
-          Shop Now
-        </button>
-      </div>
-    </div>
+            <div 
+              className="bg-white rounded-2xl shadow-md p-6 cursor-pointer transition-transform duration-300 hover:scale-105"
+              onClick={() => setSelectedCategory("Pooja-Items")}
+            >
+              <div className="h-40 bg-yellow-100 rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-4xl">🪔</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Pooja Items</h3>
+              <p className="text-gray-600 mb-4">From $10</p>
+              <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition">
+                Shop Now
+              </button>
+            </div>
 
-    {/* Pooja Items */}
-    <div 
-      className="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group"
-      onClick={() => setSelectedCategory("Pooja-Items")}
-    >
-      <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/04/pooja-items-600x330.jpg" 
-        alt="Pooja Items" 
-        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
-      <div className="absolute bottom-4 left-4 text-white">
-        <h3 className="text-lg font-semibold">Pooja Items</h3>
-        <p className="text-sm">From ₹10</p>
-        <button className="mt-2 bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-white font-medium">
-          Shop Now
-        </button>
-      </div>
-    </div>
+            <div 
+              className="bg-white rounded-2xl shadow-md p-6 cursor-pointer transition-transform duration-300 hover:scale-105"
+              onClick={() => setSelectedCategory("Homeopathic-Medicines")}
+            >
+              <div className="h-40 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-4xl">💊</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Homeopathic Medicines</h3>
+              <p className="text-gray-600 mb-4">From $40</p>
+              <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition">
+                Shop Now
+              </button>
+            </div>
 
-    {/* Daily Needs */}
-    <div 
-      className="relative rounded-2xl overflow-hidden shadow-md cursor-pointer group"
-      onClick={() => setSelectedCategory("Daily-Needs")}
-    >
-      <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/04/FMCG-1-600x330.jpg" 
-        alt="Daily Needs" 
-        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition"></div>
-      <div className="absolute bottom-4 left-4 text-white">
-        <h3 className="text-lg font-semibold">Daily Needs</h3>
-        <p className="text-sm">From ₹25</p>
-        <button className="mt-2 bg-green-500 hover:bg-green-600 px-4 py-1 rounded text-white font-medium">
-          Shop Now
-        </button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
+            <div 
+              className="bg-white rounded-2xl shadow-md p-6 cursor-pointer transition-transform duration-300 hover:scale-105"
+              onClick={() => setSelectedCategory("Daily-Needs")}
+            >
+              <div className="h-40 bg-purple-100 rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-4xl">🧴</span>
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Daily Needs</h3>
+              <p className="text-gray-600 mb-4">From $25</p>
+              <button className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold hover:bg-teal-700 transition">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
         <DealsNearby/>
       </div>
     );

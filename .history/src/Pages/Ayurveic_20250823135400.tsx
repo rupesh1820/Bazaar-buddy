@@ -268,7 +268,7 @@ const AyurvedicProducts = () => {
       onClick={() => setSelectedCategory("Daily-Needs")}
     >
       <img 
-        src="https://ashramestore.com/wp-content/uploads/2023/04/FMCG-1-600x330.jpg" 
+        src="/images/daily-needs.jpg" 
         alt="Daily Needs" 
         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
       />
