@@ -1,5 +1,6 @@
-export const products = [
-   {
+{
+  "products": [
+    {
       "id": "1",
       "name": "Ashwagandha Tablets",
       "seller": "Ayurveda Essentials",
@@ -339,5 +340,5 @@ export const products = [
       "size": "100ml",
       "description": "Herbal face wash for clean and acne-free skin"
     }
-];
-
+  ]
+}
