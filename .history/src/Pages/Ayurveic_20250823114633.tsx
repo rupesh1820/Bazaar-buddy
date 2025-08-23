@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState, useMemo } from "react";
 import { FiSearch, FiHeart, FiStar, FiFilter, FiArrowLeft } from "react-icons/fi";
 import  {products} from "../data/data";

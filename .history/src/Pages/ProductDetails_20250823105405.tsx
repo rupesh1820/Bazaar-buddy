@@ -45,7 +45,7 @@ const ProductDetailPage = () => {
         <h1 className="text-3xl font-bold text-gray-800">{product.name}</h1>
         <p className="text-sm text-gray-500">
           Sold by:{" "}
-          <span className="font-medium text-blue-600">{product.brand}</span>
+          <span className="font-medium text-blue-600">{product.seller}</span>
         </p>
         <p className="text-2xl text-green-600 font-semibold">₹{product.price}</p>
 

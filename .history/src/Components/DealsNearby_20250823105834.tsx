@@ -28,7 +28,7 @@ export default function DealsNearby() {
         className="w-full h-54 object-cover rounded"
       />
       <h3 className="text-base font-semibold mt-2">{product.name}</h3>
-      <p className="text-xs text-gray-500">by {product.brand}</p>
+      <p className="text-xs text-gray-500">by {product.seller}</p>
     </Link>
     <div className="flex justify-between items-center mt-2">
       <span className="text-green-600 font-bold text-sm">
