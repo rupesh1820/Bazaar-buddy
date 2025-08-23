@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { FiSearch,  FiHeart, FiStar, FiArrowLeft, FiFilter} from "react-icons/fi";
+import { Link } from "react-router-dom";
 import { products } from "../data/data";
 import { useCart } from "../data/CartContext";
 import { toast } from "react-toastify";
@@ -29,7 +30,23 @@ const AyurvedicProducts = () => {
   }, [ayurvedicProducts, searchQuery, activeFilter]);
 
   // Testimonials
- 
+  const testimonials = [
+    {
+      name: "Priya Sharma",
+      rating: 5,
+      comment: "The Triphala powder has done wonders for my digestion. I feel lighter and more energetic!"
+    },
+    {
+      name: "Rahul Mehta",
+      rating: 4,
+      comment: "Ashwagandha capsules have really helped with my stress levels. I sleep better now."
+    },
+    {
+      name: "Sunita Patel",
+      rating: 5,
+      comment: "The Neem soap cleared my acne in just two weeks. My skin has never been better!"
+    }
+  ];
 
   // Rating stars utility
   const renderStars = (rating) => {

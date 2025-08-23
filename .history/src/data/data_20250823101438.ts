@@ -21,7 +21,7 @@ export const products = [
   {id : "2",
     quantity: 2,
     name: "Silicone Scrubber",
-    seller: "ayurvedic-shop",
+    seller: "Priya's Handicrafts",
     price: 99,
     image: "/Images/product.jpg",
     extraImage : [ 
